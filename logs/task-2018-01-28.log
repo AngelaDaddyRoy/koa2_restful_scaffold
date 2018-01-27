@@ -1,0 +1,5 @@
+[2018-01-28T01:04:15.935] [INFO] cheese - 响应时间为0.018s
+[2018-01-28T01:04:18.222] [INFO] cheese - 响应时间为0.001s
+[2018-01-28T01:07:27.525] [INFO] cheese - {"projectName":"koa2-tutorial","serverIp":"172.21.136.33","method":"GET","url":"/","host":"localhost:3000","message":{"responseTime":"响应时间为0.024s"},"userAgent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"}
+[2018-01-28T01:12:36.836] [INFO] cheese - {"projectName":"koa2-tutorial","serverIp":"172.21.136.33","method":"GET","url":"/","host":"localhost:3000","message":{"responseTime":"响应时间为0.023s"},"userAgent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"}
+[2018-01-28T01:12:46.267] [INFO] cheese - {"projectName":"koa2-tutorial","serverIp":"172.21.136.33","method":"GET","url":"/asd","host":"localhost:3000","message":{"responseTime":"响应时间为0.003s"},"userAgent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36"}
