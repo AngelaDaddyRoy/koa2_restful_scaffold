@@ -22,7 +22,7 @@ module.exports = function (opts) {
       let extname = Path.extname(filename);
       //只处理js文件
       if (extname === '.js') {
-        //将文件名中去掉后缀
+        //将文件名去掉后缀
         let name = Path.basename(filename, extname);
         //读取文件中的内容并赋值绑定
         content[name] = require(Path.join(path, filename));

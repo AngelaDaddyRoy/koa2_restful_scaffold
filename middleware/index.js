@@ -8,8 +8,13 @@ const miSend = require('./mi-send')
 const miLog = require('./mi-log/logger')
 const miHttpError = require('./mi-http-error')
 const miRule = require('./mi-rule')
+const db = require('./mi-db')
+const models = require('./mi-db/dbModels')
 
 module.exports = (app) => {
+    //connect to mongodb and bind 'db' shortcut to app
+    db(app)
+    models(app)
   app.use(miHttpError())
   // 将配置中间件的参数在注册中间件时作为参数传入
   app.use(miLog({
@@ -43,6 +48,7 @@ module.exports = (app) => {
       }
     ]
   })
+
 
   app.use(bodyParser())
   app.use(miSend())

@@ -1,7 +1,12 @@
 const HomeService = require('../service/home')
 module.exports = {
-    index: async(ctx, next) => {
-      ctx.response.body = `<h1>index page</h1>`
+    index: async(ctx, next) => { 
+     const newUser = new  ctx.models.User({userName:"aaa"})
+    await newUser.save(function(err,returnObj){
+      if (err) return console.error(err);
+      ctx.response.body = `<h1>index page ${returnObj.userName}</h1>`
+     })
+   
     },
     home: async(ctx, next) => {
       await ctx.render('home/home',{

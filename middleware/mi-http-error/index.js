@@ -16,15 +16,15 @@ module.exports = () => {
         if(status >= 400){
           switch(status){
             case 400:
-            ctx.body = '400'
+            ctx.body = '错误请求'
             case 404:
-            ctx.body = '404'
+            ctx.body = '未找到资源或页面'
             case 500:
-            ctx.body = '500'
+            ctx.body = '服务器内部错误'
               break;
             // 其它错误 指定渲染 other 文件
             default:
-                ctx.body = 'unkonw error'
+                ctx.body = '位置错误'
           }
         }
       }

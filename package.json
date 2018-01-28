@@ -16,6 +16,10 @@
     "koa-nunjucks-2": "^3.0.2",
     "koa-router": "^7.3.0",
     "koa-static": "^4.0.2",
-    "log4js": "^2.5.2"
+    "log4js": "^2.5.2",
+    "mongoose": "^4.13.10"
+  },
+  "devDependencies": {
+    "chalk": "^2.3.0"
   }
 }
